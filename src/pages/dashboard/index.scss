@@ -1,0 +1,151 @@
+@import '../../style/func.common.scss';
+.container {
+  width: 100%;
+  min-height: calc(100vh - 168rpx);
+  background-color: #F6F6F6;
+  box-sizing: border-box;
+  padding: 32rpx 32rpx 68rpx;
+  .card-container {
+    width: 100%;
+    height: 224rpx;
+    position: relative;
+    background-color: #141310;
+    .card-bg {
+      width: calc(100% - 8rpx);
+      height: calc(100% - 8rpx);
+      position: absolute;
+      top: 4rpx;
+      left: 4rpx;
+      .bg-image {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .card-info {
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box;
+      padding: 48rpx 32rpx;
+      display: flex;
+      justify-content: space-between;
+      .card-info-left {
+        display: flex;
+        flex: 1;
+        .cart-photo {
+          width: 120rpx;
+          height: 120rpx;
+          border: 1px solid #ffffff;
+          border-radius: 50%;
+          overflow: hidden;
+          margin-right: 32rpx;
+          .image {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .cart-introduce {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          flex: 1;
+          // .cart-name-position {
+          //   display: flex;
+          //   margin-bottom: 16rpx;
+            .name {
+              // max-width: 120rpx;
+              font-size: 28rpx;
+              font-family: HelveticaNeue-Bold, HelveticaNeue;
+              font-weight: bold;
+              color: #FFFFFF;
+              line-height: 40rpx;
+              margin-right: 20rpx;
+              margin-top: 8rpx;
+              @include word-line-ellipsis(1);
+            }
+            .position {
+              align-self: flex-start;
+              padding: 4rpx 16rpx;
+              background-color: #D7C3A0;
+              font-size: 20rpx;
+              font-family: PingFangSC-Medium, PingFang SC;
+              font-weight: 500;
+              color: #67573C;
+              line-height: 32rpx;
+            }
+          // }
+          .store-potion {
+            font-size: 20rpx;
+            font-family: HelveticaNeue-Bold, HelveticaNeue;
+            font-weight: bold;
+            color: #FFFFFF;
+            line-height: 32rpx;
+            opacity: 0.4;
+          }
+        }
+      }
+      .card-info-right {
+        display: flex;
+        align-items: center;
+        .module {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .module-image {
+            width: 52rpx;
+            height: 52rpx;
+            opacity: 0.8;
+          }
+          .text {
+            font-size: 18rpx;
+            font-family: PingFangSC-Medium, PingFang SC;
+            font-weight: 500;
+            color: #FFFFFF;
+            line-height: 32rpx;
+            margin-top: 4rpx;
+            opacity: 0.6;
+          }
+        }
+        .distribution {
+          margin-right: 30rpx;
+        }
+      }
+    }
+  }
+
+  .no-data {
+    width: 100%;
+    text-align: center;
+    margin-top: 20%;
+  }
+
+  .report-card {
+    width: 100%;
+    background-color: #fff;
+    margin-top: 30rpx;
+    .report-title {
+      width: 100%;
+      height: 92rpx;
+      background-color: #332F27;
+      border: 1px solid #D7C3A0;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      box-sizing: border-box;
+      padding: 24rpx 32rpx;
+      .store {
+        text-align: end;
+        font-size: 12px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #D7C3A0;
+        opacity: 0.6;
+      }
+      .image {
+        margin-left: 4rpx;
+        width: 36rpx;
+        height: 36rpx;
+      }
+    }
+  }
+}

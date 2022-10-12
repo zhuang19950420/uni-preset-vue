@@ -1,0 +1,124 @@
+$bar_height: 96rpx;
+
+// .temp-view {
+//   width: 100%;
+//   height: $bar_height;
+// }
+.container {
+  box-shadow: inset 0px -1px 0px 0px #f3f3f3;
+  background-color: #141310;
+  box-sizing: border-box;
+  padding: 16rpx;
+  display: flex;
+  align-items: center;
+  // position: fixed;
+  width: 100%;
+  height: 108rpx;
+  &.pos {
+    position: relative;
+    z-index: 100;
+  }
+  &.posAdd {
+    position: relative;
+    z-index: 110;
+  }
+  .search-icon {
+    flex-shrink: 0;
+    width: 48rpx;
+    height: 48rpx;
+    .img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .sp-line {
+    width: 1px;
+    height: 48rpx;
+    background-color: #f1f1f1;
+    margin: 0 12rpx 0 24rpx;
+    flex-shrink: 0;
+  }
+  .search-scroll {
+    height: $bar_height;
+    display: flex;
+    flex-wrap: wrap;
+    white-space: nowrap;
+    .wrapper {
+      display: inline-block;
+      padding: 0 28rpx;
+      box-sizing: border-box;
+      height: 100%;
+      .key-word {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24rpx;
+        color: #737b82;
+        opacity: 0.3;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .menu-icon {
+    flex-shrink: 0;
+    width: 64rpx;
+    height: 64rpx;
+    padding-left: 12rpx;
+    .img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  // 第一种search展示模块
+  .search {
+    width: 718rpx;
+    height: 76rpx;
+    position: relative;
+    background: linear-gradient(
+      202deg,
+      #b18c4f 0%,
+      #b69357 13%,
+      #efdbaf 59%,
+      #d7c3a0 68%,
+      #b18c4f 89%,
+      #b18c4f 100%
+    );
+    .content {
+      display: flex;
+      align-items: center;
+      box-sizing: border-box;
+      background-color: #141310;
+      position: absolute;
+      width: 714rpx;
+      height: 72rpx;
+      top: 2rpx;
+      left: 2rpx;
+    }
+    .search-img {
+      width: 72rpx;
+      height: 72rpx;
+    }
+    .search-input {
+      flex: 1;
+      height: 100%;
+      font-size: 24rpx;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #deceb2;
+      line-height: 32rpx;
+      text-align: center;
+      // background-color: #141310;
+    }
+    .close {
+      width: 72rpx;
+      height: 72rpx;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0.5;
+    }
+  }
+}

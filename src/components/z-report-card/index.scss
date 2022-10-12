@@ -1,0 +1,213 @@
+@import '../../style/func.common.scss';
+.report-card {
+  width: 100%;
+  background-color: #fff;
+  margin-top: 30rpx;
+  .report-title {
+    width: 100%;
+    height: 92rpx;
+    background-color: #332f27;
+    border: 1px solid #d7c3a0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 24rpx 32rpx;
+    .title {
+      flex: 1;
+      font-size: 32rpx;
+      font-family: PingFangSC-Medium, PingFang SC;
+      font-weight: 500;
+      color: #d7c3a0;
+      line-height: 44rpx;
+      @include word-line-ellipsis(1);
+    }
+    .more {
+      font-size: 12px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #d7c3a0;
+      opacity: 0.6;
+      line-height: 18px;
+      display: flex;
+      margin-left: 40rpx;
+      .arrow {
+        margin-left: 4rpx;
+        width: 36rpx;
+        height: 36rpx;
+        .image {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+  .report-list {
+    height: 400rpx;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+    padding-bottom: 80rpx;
+    transition: all 0.4s linear;
+    &.show-more-click {
+      height: auto;
+      transition: all 0.4s linear;
+    }
+    .report-section {
+      margin-top: 30rpx;
+      &:nth-child(2) {
+        margin-bottom: 34rpx;
+      }
+      .section-1 {
+        box-sizing: border-box;
+        padding: 0rpx 48rpx 0rpx;
+        .section-title {
+          font-size: 32rpx;
+          font-family: PingFangSC-Semibold, PingFang SC;
+          font-weight: 600;
+          color: #141310;
+          line-height: 44rpx;
+          @include word-line-ellipsis(1);
+          .under-line {
+            width: 64rpx;
+            height: 8rpx;
+            background-color: #d7c3a0;
+          }
+        }
+
+        .section-detail {
+          display: flex;
+          flex-wrap: wrap;
+          .section-item {
+            flex: 0 0 37%;
+            margin-top: 36rpx;
+            &.right {
+              flex: 0 0 26%;
+            }
+            .number {
+              font-size: 32rpx;
+              font-family: HelveticaNeue-CondensedBold, HelveticaNeue;
+              font-weight: normal;
+              color: #141310;
+              line-height: 38rpx;
+              @include word-line-ellipsis(1);
+            }
+            .text {
+              font-size: 20rpx;
+              font-family: PingFangSC-Regular, PingFang SC;
+              font-weight: 400;
+              color: #141310;
+              height: 32rpx;
+              line-height: 32rpx;
+              opacity: 0.3;
+              margin-top: 8rpx;
+              @include word-line-ellipsis(1);
+            }
+          }
+        }
+      }
+      .section {
+        box-sizing: border-box;
+        padding: 0rpx 48rpx 48rpx;
+        .section-title {
+          font-size: 32rpx;
+          font-family: PingFangSC-Semibold, PingFang SC;
+          font-weight: 600;
+          color: #141310;
+          line-height: 44rpx;
+          @include word-line-ellipsis(1);
+          .under-line {
+            width: 64rpx;
+            height: 8rpx;
+            background-color: #d7c3a0;
+          }
+        }
+        .section-detail {
+          display: flex;
+          flex-wrap: wrap;
+          &.show-more-close {
+            height: 254rpx;
+            overflow: hidden;
+            transition: all 2s;
+            -webkit-transition: all 2s;
+          }
+          &.show-more-click {
+            height: auto;
+            transition: height 2s;
+          }
+          .section-item {
+            flex: 0 0 37%;
+            margin-top: 36rpx;
+            &.right {
+              flex: 0 0 26%;
+            }
+            .number {
+              font-size: 32rpx;
+              font-family: HelveticaNeue-CondensedBold, HelveticaNeue;
+              font-weight: normal;
+              color: #141310;
+              line-height: 38rpx;
+              @include word-line-ellipsis(1);
+            }
+            .text {
+              font-size: 20rpx;
+              font-family: PingFangSC-Regular, PingFang SC;
+              font-weight: 400;
+              color: #141310;
+              height: 32rpx;
+              line-height: 32rpx;
+              opacity: 0.3;
+              margin-top: 8rpx;
+              @include word-line-ellipsis(1);
+            }
+          }
+        }
+      }
+      .line {
+        width: 622rpx;
+        border: 1px solid #d7c3a0;
+        opacity: 0.8;
+        margin: 0 auto;
+      }
+    }
+
+    // 查看个人报表按钮
+    .personal-report {
+      width: 602rpx;
+      height: 80rpx;
+      margin: 40rpx auto 0;
+    }
+
+    // 展开/收起
+    .show-more {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-color: #fff;
+      .text {
+        font-size: 18rpx;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #141310;
+        line-height: 26rpx;
+      }
+      .arrow {
+        width: 48rpx;
+        height: 30rpx;
+        box-sizing: border-box;
+        &.close {
+          transform: rotate(180deg);
+        }
+        .image {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}

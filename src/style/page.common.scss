@@ -1,0 +1,44 @@
+page {
+  background-color: #fafafa;
+  color: '#141310';
+}
+
+image {
+  display: block;
+}
+
+button {
+  margin: 0;
+  border-radius: 0;
+  padding: 0;
+  background-color: transparent;
+  line-height: auto;
+  color: $text_color;
+  &::after {
+    display: none;
+  }
+}
+
+scroll-view {
+  flex-grow: 1;
+  overflow: scroll;
+}
+
+// 按钮点击效果
+.btn-hover-opacity {
+  opacity: 0.6 !important;
+}
+
+.btn-hover-scale {
+  transform: scale(0.98) !important;
+}
+
+// 滚动条取消
+.scroll-hidden {
+  & ::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    color: transparent;
+    display: none;
+  }
+}

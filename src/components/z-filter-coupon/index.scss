@@ -1,0 +1,28 @@
+.filter-detail {
+  width: 100%;
+  background-color: #F9F9F9;
+  box-sizing: border-box;
+  .scroll-filter {
+    padding: 0 48rpx 84rpx;
+    max-height: 600rpx;
+  }
+  .footer {
+    width: 100%;
+    height: 164rpx;
+    background-color: #fff;
+    display: flex;
+    box-sizing: border-box;
+    padding-top: 16rpx;
+    justify-content: center;
+    .btn {
+      width: 315rpx;
+      height: 64rpx;
+      font-family: PingFangSC-Medium, PingFang SC;
+      font-weight: 500;
+      border: 1px solid #B18C4F;
+      &.complete {
+        margin-left: 24rpx;
+      }
+    }
+  }
+}

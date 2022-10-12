@@ -1,0 +1,22 @@
+$pd: 15rpx 30rpx;
+.wrapper {
+	padding: $pd;
+	font-size: 24rpx;
+	.f-bold {
+		font-weight: bold;
+		font-family: $font_bold;
+	}
+	.f-section {
+		font-weight: bold;
+		font-family: $font_bold;
+		padding-top: 10rpx;
+	}
+	.f-underline {
+		font-weight: bold;
+		text-decoration: underline;
+		color: $brand_color;
+	}
+	.f-underline-nocolor {
+		text-decoration: underline;
+	}
+}

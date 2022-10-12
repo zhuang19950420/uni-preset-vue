@@ -1,0 +1,160 @@
+{
+  "pages": [
+    {
+      "path": "pages/login/login",
+      "style": {
+        "navigationStyle": "default",
+        "navigationBarBackgroundColor": "#ffffff",
+        "navigationBarTitleText": "奢悦荟BoulevardDuLuxe",
+        "navigationBarTextStyle": "black"
+      }
+    },
+    {
+      "path": "pages/dashboard/dashboard",
+      "style": {
+        "navigationStyle": "custom",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/qr-code/qr-code"
+    },
+    {
+      "path": "pages/customer-list/customer-list",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/add-binding/add-binding",
+      "style": {
+        "navigationBarTitleText": "绑定会员",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/register/register",
+      "style": {
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/customer-detail/customer-detail"
+    },
+    {
+      "path": "pages/management-list/management-list",
+      "style": {
+        "navigationBarTitleText": "分配管理"
+      }
+    },
+    {
+      "path": "pages/search/search"
+    },
+    {
+      "path": "pages/label-management/label-management"
+    },
+    {
+      "path": "pages/all-tag/all-tag",
+      "style": {
+        "navigationBarBackgroundColor": "#141310",
+        "navigationBarTitleText": "全部标签",
+        "navigationBarTextStyle": "white",
+        "backgroundColor": "#FFFFFF"
+      }
+    },
+    {
+      "path": "pages/customer-tag/customer-tag",
+      "style": {
+        "navigationBarBackgroundColor": "#141310",
+        "navigationBarTitleText": "标签管理",
+        "navigationBarTextStyle": "white",
+        "backgroundColor": "#FFFFFF"
+      }
+    },
+    {
+      "path": "pages/director-report-detail/director-report-detail"
+    },
+    {
+      "path": "pages/report-detail/report-detail"
+    },
+    {
+      "path": "pages/report-list/report-list"
+    },
+    {
+      "path": "pages/personal-report/personal-report"
+    },
+    {
+      "path": "pages/library-goods/library-goods",
+      "style": {
+        "navigationStyle": "custom",
+        "disableScroll": true
+      }
+    },
+    {
+      "path": "pages/goods-order/goods-order",
+      "style": {
+        "navigationStyle": "custom",
+        "disableScroll": true
+      }
+    },
+    {
+      "path": "pages/logistics/logistics",
+      "style": {
+        "navigationBarTitleText": "物流详情",
+        "navigationBarBackgroundColor": "#ffffff",
+        "navigationBarTextStyle": "black",
+        "disableScroll": true
+      }
+    },
+    {
+      "path": "pages/coupon/coupon",
+      "style": {
+        "navigationStyle": "custom",
+        "disableScroll": true
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarBackgroundColor": "#141310",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#FAFAFA"
+  },
+  "tabBar": {
+    "color": "#141310",
+    "selectedColor": "#000",
+    "backgroundColor": "#fff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/dashboard/dashboard",
+        "text": "仪表盘",
+        "iconPath": "static/icon/tabBar/dashboard.png",
+        "selectedIconPath": "static/icon/tabBar/dashboard_select.png"
+      },
+      {
+        "pagePath": "pages/customer-list/customer-list",
+        "text": "顾客列表",
+        "iconPath": "static/icon/tabBar/customer.png",
+        "selectedIconPath": "static/icon/tabBar/customer_select.png"
+      },
+      {
+        "pagePath": "pages/goods-order/goods-order",
+        "text": "带货订单",
+        "iconPath": "static/icon/tabBar/order.png",
+        "selectedIconPath": "static/icon/tabBar/order_select.png"
+      },
+      {
+        "pagePath": "pages/library-goods/library-goods",
+        "text": "带货商城",
+        "iconPath": "static/icon/tabBar/goods.png",
+        "selectedIconPath": "static/icon/tabBar/goods_select.png"
+      },
+      {
+        "pagePath": "pages/coupon/coupon",
+        "text": "礼券中心",
+        "iconPath": "static/icon/tabBar/coupon.png",
+        "selectedIconPath": "static/icon/tabBar/coupon_select.png"
+      }
+    ]
+  }
+}

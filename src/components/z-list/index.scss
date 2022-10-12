@@ -1,0 +1,107 @@
+@import '../../style/func.common.scss';
+.scroll-list {
+  height: calc(100vh - 548rpx);
+  .list {
+    width: 100%;
+    .section {
+      width: 100%;
+      height: 216rpx;
+      background-color: #fff;
+      box-sizing: border-box;
+      padding: 48rpx 32rpx;
+      margin-top: 8rpx;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      &:first-child {
+        margin-top: 0;
+      }
+      .info {
+        display: flex;
+        align-items: center;
+        .portrait {
+          width: 120rpx;
+          height: 120rpx;
+          border-radius: 50%;
+          // border: 1px solid #ffffff;
+          background-color: #fbf9f6;
+          box-sizing: border-box;
+          padding: 26rpx;
+          .image {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .portrait1 {
+          width: 120rpx;
+          height: 120rpx;
+          border-radius: 50%;
+          // border: 1px solid #ffffff;
+          background-color: #fbf9f6;
+          box-sizing: border-box;
+          overflow: hidden;
+          .image {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .name-identity {
+          display: flex;
+          margin-left: 32rpx;
+          box-sizing: border-box;
+          padding-right: 20rpx;
+          .name {
+            font-size: 32rpx;
+            font-family: HelveticaNeue-Medium, HelveticaNeue;
+            font-weight: 500;
+            color: #141310;
+            line-height: 40rpx;
+            max-width: 150rpx;
+            @include word-line-ellipsis(1);
+          }
+          .identity {
+            box-sizing: border-box;
+            height: 40rpx;
+            background-color: #dacbaf;
+            padding: 4rpx 16rpx;
+            font-size: 20rpx;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            line-height: 32rpx;
+            margin-left: 20rpx;
+            color: #fff;
+          }
+        }
+        .wx-time {
+          margin-left: 32rpx;
+          font-size: 22rpx;
+          margin-top: 10rpx;
+        }
+        // .name-time {
+        //   margin-left: 32rpx;
+        //   .wx-name {
+        //     // font-size: ;
+        //   }
+        //
+        // }
+      }
+      .btn {
+        width: 144rpx;
+        height: 64rpx;
+        border: 1px solid #968765;
+        font-weight: 500;
+      }
+    }
+    .empty-wrapper {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 68rpx 8rpx;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .bottom {
+    width: 100%;
+    height: 60rpx;
+  }
+}

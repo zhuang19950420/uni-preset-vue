@@ -1,0 +1,87 @@
+.empty-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &.an {
+    .icon {
+      animation: flipInY 1s 0.5s;
+    }
+    .label {
+      opacity: 0;
+      animation: fadeIn 0.5s 0.5s ease-out forwards;
+    }
+    .desc {
+      opacity: 0;
+      transform: translateY(20rpx);
+      animation: fadeIn 0.5s 0.5s ease-out forwards;
+    }
+    .btn {
+      opacity: 0;
+      transform: translateY(50rpx);
+      animation: fadeInUp 1s 0.5s ease-out forwards;
+    }
+  }
+  .icon {
+    width: 92rpx;
+    height: 92rpx;
+  }
+  .label {
+    font-size: 44rpx;
+    font-family: $font_bold;
+    letter-spacing: 1px;
+    padding: 48rpx 0 0;
+  }
+  .desc {
+    font-size: 24rpx;
+    color: $text_color;
+    font-family: $font_light;
+    padding: 16rpx 0 48rpx;
+  }
+  .btn {
+    width: 448rpx;
+    height: 104rpx;
+  }
+}
+
+.normal-empty-container {
+  font-size: 24rpx;
+  color: $text_color;
+  .an {
+    opacity: 0;
+    animation: fadeIn 0.35s ease-out forwards;
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes flipInY {
+  from {
+    transform: rotate3d(0, 1, 0, 90deg);
+    animation-timing-function: ease-in;
+  }
+
+  40% {
+    transform: rotate3d(0, 1, 0, -20deg);
+    animation-timing-function: ease-in;
+  }
+
+  60% {
+    transform: rotate3d(0, 1, 0, 10deg);
+  }
+
+  80% {
+    transform: rotate3d(0, 1, 0, -5deg);
+  }
+}

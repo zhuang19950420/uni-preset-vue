@@ -1,0 +1,69 @@
+.add-binding {
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding: 32rpx 32rpx 0;
+  background-color: #fff;
+  .bg-image {
+    width: 100%;
+    height: 20rpx;
+    .image {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .section_1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .logo {
+      width: 122rpx;
+      height: 110rpx;
+      margin-top: 174rpx;
+      .image {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .text {
+      font-size: 36rpx;
+      font-family: PingFangSC-Medium, PingFang SC;
+      font-weight: 500;
+      color: #141310;
+      line-height: 50rpx;
+      letter-spacing: 1px;
+      margin-top: 64rpx;
+    }
+    .phone {
+      width: 480rpx;
+      border-bottom: 1px solid #B7B7B7;
+      margin-top: 100rpx;
+      text-align: center;
+      box-sizing: border-box;
+      padding-bottom: 20rpx;
+      font-size: 36rpx;
+      font-family: PingFangSC-Medium, PingFang SC;
+      font-weight: 500;
+      color: #141310;
+      letter-spacing: 4rpx;
+    }
+    .confirm {
+      width: 400rpx;
+      height: 76rpx;
+      margin-top: 118rpx;
+    }
+  }
+  .bg-image-footer {
+    width: 678rpx;
+    height: 20rpx;
+    position: fixed;
+    bottom: 64rpx;
+    left: 36rpx;
+    transform: rotate(180deg);
+    .image {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

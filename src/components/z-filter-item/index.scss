@@ -1,0 +1,46 @@
+@import '../../style/func.common.scss';
+.filter-section {
+  box-sizing: border-box;
+  margin-top: 48rpx;
+  .title-close {
+    display: flex;
+    justify-content: space-between;
+    .title {
+      font-size: 36rpx;
+      font-family: PingFangSC-Semibold, PingFang SC;
+      font-weight: 600;
+      color: #333333;
+      line-height: 50rpx;
+    }
+    .close {
+      width: 40rpx;
+      height: 40rpx;
+      background: rgba(216, 216, 216, 0);
+    }
+  }
+  .filter-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 16rpx;
+    .filter-item {
+      width: 160rpx;
+      height: 64rpx;
+      box-sizing: border-box;
+      background-color: #fff;
+      margin-right: 32rpx;
+      margin-top: 16rpx;
+      font-size: 24rpx;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #141310;
+      line-height: 64rpx;
+      text-align: center;
+      &.select {
+        border: 1px solid #B18C4F;
+        font-weight: 500;
+        color: #B18C4F;
+      }
+    }
+  }
+}

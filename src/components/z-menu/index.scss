@@ -1,0 +1,72 @@
+$pd_x: 48rpx;
+
+.container {
+  height: 104rpx;
+  display: flex;
+  position: relative;
+  // justify-content: space-between;
+  box-sizing: border-box;
+  // padding: 0 $pd_x;
+  box-shadow: inset 0px -1px 0px 0px #f3f3f3;
+  .wrapper {
+    flex-grow: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding-bottom: 8rpx;
+    .menu {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 24rpx;
+      transition: all 0.3s;
+      font-size: 28rpx;
+      font-family: PingFangSC-Medium, PingFang SC;
+      color: #141310;
+      line-height: 40rpx;
+      &.active {
+        font-weight: 500;
+      }
+      &.normal {
+        font-weight: 400;
+        opacity: 0.3;
+      }
+    }
+  }
+  .coupon-wrapper {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 32rpx;
+    font-size: 28rpx;
+    font-family: PingFangSC-Semibold, PingFang SC;
+    font-weight: 600;
+    color: #141310;
+    line-height: 32rpx;
+    &:nth-child(1) {
+      margin-left: 48rpx;
+    }
+    &:nth-child(2) {
+      margin-left: 68rpx;
+    }
+    &:nth-child(3) {
+      margin-left: 64rpx;
+    }
+    .menu {
+      opacity: 0.3;
+    }
+    .active {
+      font-weight: 600;
+      color: #141310;
+      opacity: 1;
+    }
+  }
+  .line {
+    position: absolute;
+    bottom: 0;
+    height: 8rpx;
+    background-color: #B18C4F;
+    transition: all 0.3s ease-out;
+  }
+}

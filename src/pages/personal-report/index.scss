@@ -1,0 +1,109 @@
+@import '../../style/func.common.scss';
+.personal-report {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 32rpx 80rpx;
+  .report-card {
+    width: 100%;
+    background-color: #fff;
+    margin-top: 40rpx;
+    .report-title {
+      width: 100%;
+      height: 92rpx;
+      background-color: #332f27;
+      border: 1px solid #d7c3a0;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-sizing: border-box;
+      padding: 24rpx 32rpx;
+      .title {
+        flex: 1;
+        font-size: 32rpx;
+        font-family: PingFangSC-Medium, PingFang SC;
+        font-weight: 500;
+        color: #d7c3a0;
+        line-height: 44rpx;
+        @include word-line-ellipsis(1);
+      }
+      .more {
+        font-size: 12px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #d7c3a0;
+        opacity: 0.6;
+        line-height: 18px;
+        display: flex;
+        margin-left: 40rpx;
+      }
+    }
+    .report-list {
+      height: auto;
+      overflow: hidden;
+      position: relative;
+      box-sizing: border-box;
+      .report-section {
+        margin-top: 30rpx;
+        .section {
+          box-sizing: border-box;
+          padding: 0 48rpx 48rpx;
+          .section-title {
+            font-size: 32rpx;
+            font-family: PingFangSC-Semibold, PingFang SC;
+            font-weight: 600;
+            color: #141310;
+            line-height: 44rpx;
+            @include word-line-ellipsis(1);
+            .under-line {
+              width: 64rpx;
+              height: 8rpx;
+              background-color: #d7c3a0;
+            }
+          }
+          .section-detail {
+            display: flex;
+            flex-wrap: wrap;
+            .section-item {
+              flex: 0 0 37%;
+              margin-top: 36rpx;
+              &.right {
+                flex: 0 0 26%;
+              }
+              .number {
+                font-size: 32rpx;
+                font-family: HelveticaNeue-CondensedBold, HelveticaNeue;
+                font-weight: normal;
+                color: #141310;
+                line-height: 38rpx;
+                @include word-line-ellipsis(1);
+              }
+              .text {
+                font-size: 20rpx;
+                font-family: PingFangSC-Regular, PingFang SC;
+                font-weight: 400;
+                color: #141310;
+                height: 32rpx;
+                line-height: 32rpx;
+                opacity: 0.3;
+                margin-top: 8rpx;
+                @include word-line-ellipsis(1);
+              }
+            }
+          }
+        }
+        .line {
+          width: 622rpx;
+          border: 1px solid #d7c3a0;
+          opacity: 0.8;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+  .no-data {
+    display: flex;
+    justify-content: center;
+    padding-top: 10vh;
+  }
+}
